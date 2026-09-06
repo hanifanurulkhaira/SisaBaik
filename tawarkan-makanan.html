@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
     <head>
         <meta charset="UTF-8">
@@ -16,8 +16,8 @@
             <p><strong>SisaBaik</strong></p>
             <nav aria-label="Navigasi utama">
                 <ul>
-                    <li> <a href="index.html">Beranda</a></li>
-                    <li> <a href="daftar-penyedia.html">Daftar sebagai penyedia</a></li>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="daftar-penyedia.html">Daftar sebagai penyedia</a></li>
                     <li> 
                         <a href="tawarkan-makanan.html" aria-current="page">
                             Tawarkan makanan
@@ -95,9 +95,8 @@
                          id="jumlah" 
                          name="jumlah"
                          min="1"
-                         max="10000"
+                         max="1000"
                          step="1"
-                         
                          required
                         >
                     </p>
@@ -115,7 +114,7 @@
                     </p>
 
                     <p>
-                        <label for="harga-normal">Harga normal per satuan (Rp) *</label><br>
+                        <label for="harga-normal">Harga normal per satuan (rupiah) *</label><br>
                         <input
                          type="number" 
                          id="harga-normal" 
@@ -155,15 +154,15 @@
                     <input
                      type="number" 
                      id="harga-pemulihan" 
-                     name="harga_pemulihan"
+                     name="harga_penawaran"
                      min="0"
-                     max="100000000"
+                     max="10000000"
                      step="500"
                      aria-describedby="bantuan-harga"
                      required
                     ><br>
                     <small id="bantuan-harga">
-                        Isi 0 jika makanan disalurkan yanpa biaya. Perbandingan dengan  harga normal
+                        Isi 0 jika makanan disalurkan tanpa biaya. Perbandingan dengan harga normal
                         akan divalidasi menggunakan JavaScript pada chapter berikutnya.
                     </small>
                 </p>                
@@ -194,7 +193,7 @@
                     </p>
                     
                     <fieldset>
-                        <legend>Informasi alergen yang dikketahui</legend>
+                        <legend>Informasi alergen yang diketahui</legend>
                         <p>
                             <input type="checkbox" id="alergen-gluten" name="alergen" value="gluten">
                             <label for="alergen-gluten">Gluten</label>
@@ -237,7 +236,7 @@
                          required
                         >
                         <label for="konfirmasi-keamanan">
-                            Saya memastikan contoh makanan ini masih layak dikonsumsi dan informasi
+                            Saya memastikan contoh makanan ini masih layak konsumsi dan informasi
                             kondisi serta alergennyaa telah ditulis dengan jujur. *
                         </label>
                     </p>
@@ -252,7 +251,7 @@
             <section aria-labelledby="batas-validasi-html">
                 <h2 id="batas-validasi-html">Batas validasi pada tahap HTML</h2>
                 <p>
-                    Atribut HTML dapat memeriksa isiaan wajib, format dasar, dadn rentang angka.
+                    Atribut HTML dapat memeriksa isian wajib, format dasar, dan rentang angka.
                     Namun, HTTML belum dapat memastikan harga penawaran lebih kecil daripada
                     harga normal atau batas pengambilan berada di masa depan. Aturan lintas-kolom tersebut 
                     akan ditambahkan dengan JavaScript dan tetap diperiksa ulang pada server. 
