@@ -1,4 +1,4 @@
-Developed by Hanifa Nurul Khaira (23367027)
+<i>Developed by Hanifa Nurul Khaira (23367027)</i>
 
 # SisaBaik
 
