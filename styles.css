@@ -1,7 +1,7 @@
 :root {
     --color-primary: #176b4d;
     --color-primary-dark: #0f4f39;
-    --color-primary-light: #e8f5ef;
+    --color-primary-soft: #e8f5ef;
     --color-accent: #f2b84b;
     --color-text: #17211b;
     --color-muted: #52615a;
@@ -260,23 +260,23 @@ a:hover {
     box-shadow: var(--shadow-card);
 }
 
-.offer-card_visual {
+.offer-card__visual {
     min-height: 8rem;
     background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
 }
 
-.offer-card_content {
+.offer-card__content {
     display: flex;
     flex: 1;
     flex-direction: column;
     padding: 1.25rem;
 }
 
-.offer-card_meta {
+.offer-card__meta {
     color: var(--color-muted);
 }
 
-.offer-card_price {
+.offer-card__price {
     margin-block-start: auto;
     font-size: 1.15rem;
 }
